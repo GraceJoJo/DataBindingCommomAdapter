@@ -28,6 +28,6 @@ class ADA_MineList constructor(context: Context) : CommonAdapterListView<MineBea
 
 }
 ```
-好处：
+好处：<p>
 (1)在布局中即把view的数据绑定工作全做好了。<p>
 (2)在Adapter中可以省略大量的代码，使得代码更加简洁，一目了然，易于维护。
