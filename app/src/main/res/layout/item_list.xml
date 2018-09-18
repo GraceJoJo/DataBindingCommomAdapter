@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+    <!--data节点下一个variable节点代表一个变量，
+    name属性根据需要自己取名，type为需要用到的Model的全路径，
+    功能相当于写代码的时候引入一个类的功能-->
+    <data>
+
+        <variable
+            name="rankBean"
+            type="com.example.jojo.databinding_commonadapter.DataBean"></variable>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <FrameLayout
+            android:id="@+id/ll_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+
+            <TextView
+                android:id="@+id/tv_rank_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#2E3439"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/ll_rank"
+            android:padding="1px"
+            android:scaleType="fitXY"
+            app:imageUrl="@{rankBean.covor_url}" />
+
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/iv_cover"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="7dp"
+                android:includeFontPadding="false"
+                android:text="@{rankBean.name_cn}"
+                android:textColor="#2E3439"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="6dp"
+                android:text="@{rankBean.author}"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="11dp"
+                android:ellipsize="end"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:text="@{rankBean.comment}"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <View xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ll_info"
+            android:layout_marginTop="10dp"
+            android:background="#f9f9f9"></View>
+
+    </RelativeLayout>
+</layout>
