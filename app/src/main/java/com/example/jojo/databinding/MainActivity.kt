@@ -1,4 +1,4 @@
-package com.example.jojo.databinding_commonadapter
+package com.example.jojo.databinding
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity

@@ -1,4 +1,4 @@
-package com.example.jojo.databinding_commonadapter;
+package com.example.jojo.databinding;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

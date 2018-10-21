@@ -1,4 +1,4 @@
-package com.example.jojo.databinding_commonadapter
+package com.example.jojo.databinding
 
 /**
  * Created by JoJo on 2018/9/14.

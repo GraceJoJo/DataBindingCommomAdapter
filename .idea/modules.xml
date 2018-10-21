@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Databinding_CommonAdapter.iml" filepath="$PROJECT_DIR$/Databinding_CommonAdapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataBindingCommomAdapter.iml" filepath="$PROJECT_DIR$/DataBindingCommomAdapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/databindingadapter/databindingadapter.iml" filepath="$PROJECT_DIR$/databindingadapter/databindingadapter.iml" />
     </modules>

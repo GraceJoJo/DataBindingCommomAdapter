@@ -8,8 +8,8 @@
     <data>
 
         <variable
-            name="rankBean"
-            type="com.example.jojo.databinding_commonadapter.DataBean"></variable>
+            name="dataBean"
+            type="com.example.jojo.databinding.DataBean"></variable>
     </data>
 
     <RelativeLayout
@@ -45,7 +45,7 @@
             android:layout_toRightOf="@+id/ll_rank"
             android:padding="1px"
             android:scaleType="fitXY"
-            app:imageUrl="@{rankBean.covor_url}" />
+            app:imageUrl="@{dataBean.covor_url}" />
 
         <LinearLayout
             android:id="@+id/ll_info"
@@ -62,7 +62,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginBottom="7dp"
                 android:includeFontPadding="false"
-                android:text="@{rankBean.name_cn}"
+                android:text="@{dataBean.name_cn}"
                 android:textColor="#2E3439"
                 android:textSize="14sp" />
 
@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginBottom="6dp"
-                android:text="@{rankBean.author}"
+                android:text="@{dataBean.author}"
                 android:textColor="#666666"
                 android:textSize="12sp" />
 
@@ -84,7 +84,7 @@
                 android:ellipsize="end"
                 android:inputType="textMultiLine"
                 android:lines="2"
-                android:text="@{rankBean.comment}"
+                android:text="@{dataBean.comment}"
                 android:textColor="#999999"
                 android:textSize="10sp" />
         </LinearLayout>

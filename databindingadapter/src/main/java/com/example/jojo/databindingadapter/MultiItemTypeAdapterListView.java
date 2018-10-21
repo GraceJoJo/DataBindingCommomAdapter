@@ -72,6 +72,8 @@ public class MultiItemTypeAdapterListView<T> extends BaseAdapter {
 
     protected void convert(ViewDataBinding viewDataBinding, ViewHolderListView viewHolder, T item, int position) {
         mItemViewDelegateManagerListView.convert(viewDataBinding,viewHolder, item, position);
+        //!!!!!重要!!!!!      加一行，解决adapter加了databinding数据更新刷新页面时闪烁的问题
+//        viewDataBinding.executePendingBindings();
     }
 
     public void onViewHolderCreated(ViewHolderListView holder, View itemView) {
