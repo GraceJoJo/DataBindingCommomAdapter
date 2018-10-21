@@ -5,4 +5,5 @@ package com.example.jojo.databinding;
  */
 
 public class ADA_Normal {
+    private String name;
 }
