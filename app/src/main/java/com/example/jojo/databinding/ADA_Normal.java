@@ -7,4 +7,6 @@ package com.example.jojo.databinding;
 public class ADA_Normal {
     private String name;
     private String age;
+    private String like;
+    private String sex;
 }
