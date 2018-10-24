@@ -30,6 +30,7 @@ class ADA_ListItem constructor(context: Context): CommonAdapterListView<DataBean
 
 《二》实现效果：
 [example.gif](https://upload-images.jianshu.io/upload_images/3828835-b45fc454c54187ee.gif?imageMogr2/auto-orient/strip)<p>
+    
 《三》优点：<p>
 (1)在布局中即把view的数据绑定工作全做好了。<p>
 (2)在Adapter中可以省略大量的代码，使得代码更加简洁，一目了然，易于维护。
