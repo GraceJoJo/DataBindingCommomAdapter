@@ -31,6 +31,7 @@ class ADA_RecyclerItem constructor(context: Context): CommonAdapter<DataBean, It
     override fun itemLayoutId(): Int {
         return R.layout.item_layout
     }
+}
 ```
 
 (2)ListView或者GridView的Adapter
