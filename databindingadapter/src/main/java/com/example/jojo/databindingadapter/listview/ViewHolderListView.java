@@ -1,4 +1,4 @@
-package com.example.jojo.databindingadapter;
+package com.example.jojo.databindingadapter.listview;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -23,6 +23,7 @@ import android.widget.TextView;
 
 public class ViewHolderListView
 {
+//    有bug，删除数据，刷新数据的时候界面刷新有问题
     public static ViewDataBinding viewDataBinding;
     private SparseArray<View> mViews;
     protected int mPosition;

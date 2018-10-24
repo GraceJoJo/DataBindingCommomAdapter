@@ -1,4 +1,4 @@
-package com.example.jojo.databindingadapter;
+package com.example.jojo.databindingadapter.listview;
 
 import android.content.Context;
 import android.databinding.ViewDataBinding;
@@ -6,12 +6,12 @@ import android.databinding.ViewDataBinding;
 import java.util.Collection;
 import java.util.List;
 
-public abstract class CommonAdapterListView<T> extends MultiItemTypeAdapterListView<T> {
+public abstract class CommonAdapterListView<T, B extends ViewDataBinding> extends MultiItemTypeAdapterListView<T, B> {
 
     public CommonAdapterListView(Context context) {
         super(context);
 
-        addItemViewDelegate(new ItemViewDelegateListView<T>() {
+        addItemViewDelegate(new ItemViewDelegateListView<T, B>() {
             @Override
             public int getItemViewLayoutId() {
                 return itemLayoutId();
@@ -23,7 +23,7 @@ public abstract class CommonAdapterListView<T> extends MultiItemTypeAdapterListV
             }
 
             @Override
-            public void convert(ViewDataBinding viewDataBinding, ViewHolderListView holder, T t, int position) {
+            public void convert(B viewDataBinding, ViewHolderListView holder, T t, int position) {
                 CommonAdapterListView.this.convert(viewDataBinding, holder, t, position);
             }
 
@@ -32,7 +32,7 @@ public abstract class CommonAdapterListView<T> extends MultiItemTypeAdapterListV
 
     protected abstract int itemLayoutId();
 
-    protected abstract void convert(ViewDataBinding viewDataBinding, ViewHolderListView holder, T bean, int position);
+    protected abstract void convert(B viewBinding, ViewHolderListView holder, T bean, int position);
 
     /**
      * 设置适配器的数据，添加数据
