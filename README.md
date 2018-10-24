@@ -11,13 +11,13 @@ allprojects {
 			...
 			maven { url 'https://jitpack.io' }
 		}
-	}
+}
 ```
 (2） Add the dependency
 ```
 dependencies {
 	        implementation 'com.github.GraceJoJo:DataBindingBaseAdapter:1.0'
-	}
+}
 ```
 《二》代码中使用：
 (1)RecyclerView的Adapter
