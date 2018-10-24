@@ -16,7 +16,7 @@ allprojects {
 (2） Add the dependency
 ```
 dependencies {
-	        implementation 'com.github.GraceJoJo:DataBindingBaseAdapter:1.0'
+	         implementation 'com.github.GraceJoJo:DataBindingBaseAdapter:1.0.1'
 }
 ```
 《二》代码中使用：
