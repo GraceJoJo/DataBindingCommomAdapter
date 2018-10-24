@@ -5,27 +5,25 @@
 (1)RecyclerView的Adapter
 
 ```
-class ADA_ChapterFilter constructor(context: Context): CommonAdapter<DataBean, ItemLayoutBinding>(context) {
+class ADA_RecyclerItem constructor(context: Context): CommonAdapter<DataBean, ItemLayoutBinding>(context) {
     override fun convert(viewBinding: ItemLayoutBinding?, holder: ViewHolder.BindingHolder?, bean: DataBean?, position: Int) {
-        viewBinding!!.dataBean= bean
+        viewBinding!!.dataBean = bean
     }
+
     override fun itemLayoutId(): Int {
         return R.layout.item_layout
     }
-}
-```
 (2)ListView或者GridView的Adapter
 ```
-class ADA_MineList constructor(context: Context) : CommonAdapterListView<MineBean>(context) {
-    override fun convert(viewDataBinding: ViewDataBinding?, holder: ViewHolderListView?, bean: MineBean?, position: Int) {
-        var viewBinding = viewDataBinding as ItemMineListBinding
-        viewBinding.mineBean = bean
+class ADA_ListItem constructor(context: Context): CommonAdapterListView<DataBean, ItemLayoutBinding>(context) {
+
+    override fun convert(viewBinding: ItemLayoutBinding?, holder: ViewHolderListView?, bean: DataBean?, position: Int) {
+        viewBinding!!.dataBean = bean
     }
 
     override fun itemLayoutId(): Int {
-        return R.layout.item_mine_list
+        return R.layout.item_layout
     }
-
 }
 ```
 《二》实现效果：
