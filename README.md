@@ -13,8 +13,9 @@ class ADA_RecyclerItem constructor(context: Context): CommonAdapter<DataBean, It
     override fun itemLayoutId(): Int {
         return R.layout.item_layout
     }
-(2)ListView或者GridView的Adapter
 ```
+
+(2)ListView或者GridView的Adapter
 ```
 class ADA_ListItem constructor(context: Context): CommonAdapterListView<DataBean, ItemLayoutBinding>(context) {
 
@@ -32,5 +33,6 @@ class ADA_ListItem constructor(context: Context): CommonAdapterListView<DataBean
 [example.gif](https://upload-images.jianshu.io/upload_images/3828835-b45fc454c54187ee.gif?imageMogr2/auto-orient/strip)<p>
     
 《三》优点：<p>
-(1)在布局中即把view的数据绑定工作全做好了。<p>
-(2)在Adapter中可以省略大量的代码，使得代码更加简洁，一目了然，易于维护。
+(1)在布局中就把view的数据绑定工作全做好了。<p>
+(2)在Adapter中可以省略大量重复的设置数据的代码<p>
+(3)使得代码更加简洁，一目了然，易于维护。
