@@ -52,4 +52,6 @@ class ADA_ListItem constructor(context: Context): CommonAdapterListView<DataBean
 《四》优点：<p>
 (1)在布局中就把view的数据绑定工作全做好了。<p>
 (2)在Adapter中可以省略大量重复的设置数据的代码<p>
-(3)使得代码更加简洁，一目了然，易于维护。
+(3)使得代码更加简洁，一目了然，易于维护。<p>
+	
+<p>致谢：鸿洋大神的[BaseAdapter](https://github.com/hongyangAndroid/baseAdapter)
