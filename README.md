@@ -15,6 +15,7 @@ class ADA_RecyclerItem constructor(context: Context): CommonAdapter<DataBean, It
     }
 (2)ListView或者GridView的Adapter
 ```
+```
 class ADA_ListItem constructor(context: Context): CommonAdapterListView<DataBean, ItemLayoutBinding>(context) {
 
     override fun convert(viewBinding: ItemLayoutBinding?, holder: ViewHolderListView?, bean: DataBean?, position: Int) {
@@ -26,6 +27,7 @@ class ADA_ListItem constructor(context: Context): CommonAdapterListView<DataBean
     }
 }
 ```
+
 《二》实现效果：
 [example.gif](https://upload-images.jianshu.io/upload_images/3828835-b45fc454c54187ee.gif?imageMogr2/auto-orient/strip)<p>
 《三》优点：<p>
